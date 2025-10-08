@@ -1,6 +1,8 @@
 from dependencies.authn import authenticated_user
 from fastapi import Depends, HTTPException, status
 from typing import Annotated
+from enum import Enum
+
 
 class UserRole(str, Enum):
     ADMIN = "admin"
